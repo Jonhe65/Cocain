@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bàn phím nhạc</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div id="conteudo">
+        <div id="teclado">
+            <!-- Các phím trắng -->
+            <div class="tecla" data-note="C">C</div>
+            <div class="tecla" data-note="D">D</div>
+            <div class="tecla" data-note="E">E</div>
+            <div class="tecla" data-note="F">F</div>
+            <div class="tecla" data-note="G">G</div>
+            <div class="tecla" data-note="A">A</div>
+            <div class="tecla" data-note="B">B</div>
+            <div class="tecla" data-note="C2">C</div>
+
+            <!-- Các phím đen (Căn chỉnh lại để cân đối hơn) -->
+            <div class="preta" style="left: 50px;" data-note="C#"></div>
+            <div class="preta" style="left: 100px;" data-note="D#"></div>
+            <div class="preta" style="left: 210px;" data-note="F#"></div>
+            <div class="preta" style="left: 260px;" data-note="G#"></div>
+            <div class="preta" style="left: 310px;" data-note="A#"></div>
+        </div>
+    </div>
+
+    <div id="notas">Nhấn phím để nghe âm thanh</div>
+
+    <div id="icon-note">🎵</div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

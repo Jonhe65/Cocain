@@ -1,0 +1,74 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #ffccdd; /* Màu nền hồng nhẹ */
+}
+
+#conteudo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#teclado {
+    display: flex;
+    position: relative;
+    background: #191919;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.tecla {
+    width: 50px;
+    height: 180px;
+    background: #ffffff;
+    border: 2px solid #000;
+    border-radius: 5px;
+    margin: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.1s ease;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+
+.tecla:active {
+    background: #ddd;
+    transform: scale(0.95);
+}
+
+.preta {
+    width: 30px;
+    height: 120px;
+    background: #000;
+    position: absolute;
+    margin-left: -15px;
+    z-index: 2;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: transform 0.1s ease;
+}
+
+.preta:active {
+    background: #444;
+    transform: scale(0.95);
+}
+
+#notas {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#icon-note {
+    position: absolute;
+    font-size: 50px;
+    display: none;
+}
